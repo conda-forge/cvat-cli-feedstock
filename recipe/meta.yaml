@@ -24,7 +24,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - cvat-sdk >=2.24.0,<2.25.dev0
+    - cvat-sdk == {{ version }}
 
 test:
   imports:

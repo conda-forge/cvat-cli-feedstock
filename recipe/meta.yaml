@@ -1,5 +1,5 @@
 {% set name = "cvat-cli" %}
-{% set version = "2.25.0" %}
+{% set version = "2.26.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cvat_cli-{{ version }}.tar.gz
-  sha256: 9ef1fef2846cb659711b1e2851e3ddef71b58a621fcf96bfce61162bf005299f
+  sha256: 035586d3775898e3c13df387b328747d56dcd62a9c7ac15b94fb913de4f88b2b
 
 build:
   entry_points:

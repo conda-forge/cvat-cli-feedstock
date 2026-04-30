@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: cvat-cli
-  version: "2.63.0"
+  version: "2.64.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/cvat_cli-${{ version }}.tar.gz
-  sha256: e27d5ad07eb44c95d65a70a2897426fa316d7d0fd28cb6ae69829d8194c4c113
+  sha256: 8476d98fbabf0c6b821efb15dccc2849eba3bc02fa7dc578a057177957728042
 
 build:
   number: 0

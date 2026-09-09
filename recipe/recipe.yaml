@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: cvat-cli
-  version: "2.71.0"
+  version: "2.73.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/cvat_cli-${{ version }}.tar.gz
-  sha256: 48a26b35f47b923d77a68bcb30416f26d7786ff61504671638a2e7474bef1bec
+  sha256: e9cbe389683f4d82c3a9f36e7b12dad1d8b282593f5851f785a8686405eaf24e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -29,6 +29,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - cvat-sdk ==${{ version }}
+    - json-with-comments ==1.2.10
 
 tests:
   - python:

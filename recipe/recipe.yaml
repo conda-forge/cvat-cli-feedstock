@@ -29,6 +29,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - cvat-sdk ==${{ version }}
+    - json-with-comments ==1.2.10
 
 tests:
   - python:
@@ -38,6 +39,7 @@ tests:
       run:
         - pip
         - python ${{ python_min }}.*
+        - "*"
     script:
       - pip check
       - cvat-cli --help

@@ -35,11 +35,13 @@ tests:
   - python:
       imports:
         - cvat_cli
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - pip
         - python ${{ python_min }}.*
-        - "*"
     script:
       - pip check
       - cvat-cli --help
